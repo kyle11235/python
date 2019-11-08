@@ -1,6 +1,13 @@
 # python
 
-- install from source
+- mac
+
+        brew install python3
+        
+        /usr/local/bin/python3
+        /usr/local/bin/pip3
+
+- source
 
         sudo -i
         yum install gcc openssl-devel bzip2-devel
@@ -12,8 +19,7 @@
         cd /usr/bin && ln -s /usr/local/bin/python3.7 python3
         python3 --version
 
-- if change python is 3, fix yum
-
+        - if python=python3, fix yum
         sudo -i
         vi /usr/bin/yum -> #!/usr/bin/python2.7
 
@@ -23,8 +29,7 @@
         cd /bin/python && rm python
         ln -s /usr/bin/python2.7 python
 
-- install pip3
-
+        - install pip3
         sudo -i
         curl https://bootstrap.pypa.io/get-pip.py | python
         cd /usr/bin && ln -s /usr/local/bin/pip3 pip3
