@@ -7,6 +7,29 @@
         /usr/local/bin/python3
         /usr/local/bin/pip3
 
+- centos7
+
+        yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
+        cd /opt
+        wget http://npm.taobao.org/mirrors/python/3.7.9/Python-3.7.9.tgz
+        tar -xzf Python-3.7.9.tgz
+        cd Python-3.7.9
+        ./configure --prefix=/opt/python
+        make && make install
+
+        cat << EOF >> /etc/profile
+        # python
+        export PYTHON=/opt/python/bin
+        export PATH=\$PATH:\$PYTHON
+        EOF
+
+        source /etc/profile
+        pip3 install --upgrade pip
+        
+- win7 32
+
+        https://www.python.org/ftp/python/3.7.6/python-3.7.6.exe
+
 - source
 
         sudo -i
