@@ -9,6 +9,7 @@
 
 - centos7
 
+        yum -y install gcc
         yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
         cd /opt
         wget http://npm.taobao.org/mirrors/python/3.7.9/Python-3.7.9.tgz
@@ -25,6 +26,9 @@
 
         source /etc/profile
         pip3 install --upgrade pip
+        
+        python3 -V
+        pip3 -V
         
 - win7 32
 
