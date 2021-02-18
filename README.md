@@ -73,3 +73,8 @@
         print(Y)
 
 - pip3 install matplotlib
+
+- installing packages
+
+        https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments
+        
